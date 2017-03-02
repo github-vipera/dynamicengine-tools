@@ -12,7 +12,7 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Cordova Debugger",
+          "label": "DynamicEngine Tools",
           "submenu": [
             {
               "label": "Start/Stop Server",
