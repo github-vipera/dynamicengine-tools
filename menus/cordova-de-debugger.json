@@ -1,0 +1,42 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle cordova-de-debugger",
+        "command": "cordova-de-debugger:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Cordova Debugger",
+          "submenu": [
+            {
+              "label": "Start/Stop Server",
+              "command": "cordova-de-debugger:test"
+            },
+            {
+              "label": "Reload",
+              "command": "cordova-de-debugger:reload"
+            },
+            {
+              "label": "Create project",
+              "command": "cordova-de-debugger:create-project"
+            },
+            {
+              "label": "Run configuration",
+              "command": "cordova-de-debugger:run-configuration"
+            },
+            {
+              "label": "Remote run",
+              "command": "cordova-de-debugger:remote-run"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
