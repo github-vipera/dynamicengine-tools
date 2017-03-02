@@ -12,7 +12,7 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "DynamicEngine Tools",
+          "label": "Dynamic Engine Tools",
           "submenu": [
             {
               "label": "Start/Stop Server",
