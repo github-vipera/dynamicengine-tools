@@ -7,6 +7,8 @@
   "activationCommands": {
     "atom-workspace": [
       "cordova-de-debugger:test",
+      "cordova-de-debugger:project-management",
+      "cordova-de-debugger:push-tool",
       "cordova-de-debugger:create-project",
       "cordova-de-debugger:run-configuration",
       "cordova-de-debugger:remote-run"
