@@ -19,6 +19,10 @@
               "command": "cordova-de-debugger:project-management"
             },
             {
+              "label": "Push Tool",
+              "command": "cordova-de-debugger:push-tool"
+            },
+            {
               "label": "Start/Stop Server",
               "command": "cordova-de-debugger:test"
             },

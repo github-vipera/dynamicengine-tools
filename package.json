@@ -11,7 +11,8 @@
       "cordova-de-debugger:push-tool",
       "cordova-de-debugger:create-project",
       "cordova-de-debugger:run-configuration",
-      "cordova-de-debugger:remote-run"
+      "cordova-de-debugger:remote-run",
+      "cordova-de-debugger:push-tool"
     ]
   },
   "repository": "https://github.com/atom/cordova-de-debugger",
