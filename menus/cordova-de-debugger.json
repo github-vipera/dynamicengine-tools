@@ -23,7 +23,7 @@
               "command": "cordova-de-debugger:project-management"
             },
             {
-              "label": "Run configuration",
+              "label": "Run Configuration",
               "command": "cordova-de-debugger:run-configuration"
             },
             {
