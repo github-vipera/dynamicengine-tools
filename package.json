@@ -2,17 +2,16 @@
   "name": "cordova-de-debugger",
   "main": "./lib/cordova-de-debugger",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Dynamic Engine Tools Plugin for ATOM",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
-      "cordova-de-debugger:test",
       "cordova-de-debugger:project-management",
       "cordova-de-debugger:push-tool",
       "cordova-de-debugger:create-project",
       "cordova-de-debugger:run-configuration",
-      "cordova-de-debugger:remote-run",
-      "cordova-de-debugger:push-tool"
+      "cordova-de-debugger:push-tool",
+      "cordova-de-debugger:show-console"
     ]
   },
   "repository": "https://github.com/atom/cordova-de-debugger",

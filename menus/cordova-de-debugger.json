@@ -15,32 +15,24 @@
           "label": "Dynamic Engine Tools",
           "submenu": [
             {
+              "label": "Create new project...",
+              "command": "cordova-de-debugger:create-project"
+            },
+            {
               "label": "Project Management",
               "command": "cordova-de-debugger:project-management"
-            },
-            {
-              "label": "Push Tool",
-              "command": "cordova-de-debugger:push-tool"
-            },
-            {
-              "label": "Start/Stop Server",
-              "command": "cordova-de-debugger:test"
-            },
-            {
-              "label": "Reload",
-              "command": "cordova-de-debugger:reload"
-            },
-            {
-              "label": "Create project",
-              "command": "cordova-de-debugger:create-project"
             },
             {
               "label": "Run configuration",
               "command": "cordova-de-debugger:run-configuration"
             },
             {
-              "label": "Remote run",
-              "command": "cordova-de-debugger:remote-run"
+              "label": "Push Tool",
+              "command": "cordova-de-debugger:push-tool"
+            },
+            {
+              "label": "Show Console",
+              "command": "cordova-de-debugger:show-console"
             }
           ]
         }
