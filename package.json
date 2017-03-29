@@ -14,7 +14,7 @@
       "cordova-de-debugger:show-console"
     ]
   },
-  "repository": "https://github.com/atom/cordova-de-debugger",
+  "repository": "https://github.com/github-vipera/dynamicengine-tools",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
