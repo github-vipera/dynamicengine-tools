@@ -1,7 +1,7 @@
 {
   "name": "cordova-de-debugger",
   "main": "./lib/cordova-de-debugger",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Dynamic Engine Tools Plugin for ATOM",
   "keywords": [],
   "activationCommands": {
