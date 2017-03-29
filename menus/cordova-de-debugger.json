@@ -1,0 +1,42 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle cordova-de-debugger",
+        "command": "cordova-de-debugger:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Dynamic Engine Tools",
+          "submenu": [
+            {
+              "label": "Create new project...",
+              "command": "cordova-de-debugger:create-project"
+            },
+            {
+              "label": "Project Management",
+              "command": "cordova-de-debugger:project-management"
+            },
+            {
+              "label": "Run Configuration",
+              "command": "cordova-de-debugger:run-configuration"
+            },
+            {
+              "label": "Push Tool",
+              "command": "cordova-de-debugger:push-tool"
+            },
+            {
+              "label": "Show Console",
+              "command": "cordova-de-debugger:show-console"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

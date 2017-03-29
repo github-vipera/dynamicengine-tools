@@ -1,0 +1,193 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-apple:before {
+  content: "\f179";
+}
+
+.fa-android:before {
+  content: "\f17b";
+}
+
+.cordova-de-debugger {
+}
+
+.plugins-settings-left-menu-bar-container {
+  flex: 1;
+  /*border-right: 1px solid #191919;*/
+  /*background: #282c34;*/
+}
+
+.plugins-settings-left-menu-list-item > div {
+    padding: 10px;
+}
+
+.plugins-settings-left-menu-list-item.menu-item-selected {
+  background: #48505f;
+}
+
+.plugins-settings-left-menu-list-item:hover {
+  background: #3b424e;
+}
+
+.plugins-settings-panel {
+  height: 100%;
+  overflow-y: scroll;
+  flex:4;
+}
+
+.hidden-panel {
+  display: none;
+}
+
+#main-section {
+  padding-top: 0px;
+};
+
+.line-div {
+  padding: 10px;
+  border-bottom: 2px solid;
+}
+
+.icon-apple {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-android {
+  width: 16px;
+  height: 16px;
+}
+
+.border-panel {
+  border: 1px solid;
+}
+
+.build-settings{
+  color: #9da5b4;
+  border-color: #181a1f;
+  background-color: #353b45;
+}
+
+.build-flag-block > label {
+  padding-left: 5px;
+}
+
+.send-push-panel {
+  height: 100%;
+  overflow-y: scroll;
+  flex:4;
+}
+
+.push-settings-panel {
+  height: 100%;
+  overflow-y: scroll;
+  flex:4;
+}
+
+
+
+
+
+
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  /**font-weight: 300;**/
+  /**letter-spacing: .09em;**/
+  /**text-transform: uppercase;**/
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 120px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 6px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  /**
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  */
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.body-collapsed {
+  display: none;
+}
+
+.collapsable-icon{
+  float:right;
+}
