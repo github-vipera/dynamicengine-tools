@@ -1,6 +1,6 @@
 'use babel';
 
-import CordovaDeDebuggerView from '../lib/cordova-de-debugger-view';
+import CordovaDeDebuggerView from '../lib/dynamicengine-tools-view';
 
 describe('CordovaDeDebuggerView', () => {
   it('has one valid test', () => {
