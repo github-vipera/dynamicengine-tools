@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "cordova-de-debugger:toggle"
+    "ctrl-alt-o": "dynamicengine-tools:toggle"
   }
 }

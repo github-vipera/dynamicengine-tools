@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle cordova-de-debugger",
-        "command": "cordova-de-debugger:toggle"
+        "label": "Toggle dynamicengine-tools",
+        "command": "dynamicengine-tools:toggle"
       }
     ]
   },
@@ -16,23 +16,23 @@
           "submenu": [
             {
               "label": "Create new project...",
-              "command": "cordova-de-debugger:create-project"
+              "command": "dynamicengine-tools:create-project"
             },
             {
               "label": "Project Management",
-              "command": "cordova-de-debugger:project-management"
+              "command": "dynamicengine-tools:project-management"
             },
             {
               "label": "Run Configuration",
-              "command": "cordova-de-debugger:run-configuration"
+              "command": "dynamicengine-tools:run-configuration"
             },
             {
               "label": "Push Tool",
-              "command": "cordova-de-debugger:push-tool"
+              "command": "dynamicengine-tools:push-tool"
             },
             {
               "label": "Show Console",
-              "command": "cordova-de-debugger:show-console"
+              "command": "dynamicengine-tools:show-console"
             }
           ]
         }

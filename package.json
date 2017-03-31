@@ -1,17 +1,17 @@
 {
-  "name": "cordova-de-debugger",
-  "main": "./lib/cordova-de-debugger",
+  "name": "dynamicengine-tools",
+  "main": "./lib/dynamicengine-tools",
   "version": "2.1.0",
   "description": "Dynamic Engine Tools Plugin for ATOM",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
-      "cordova-de-debugger:project-management",
-      "cordova-de-debugger:push-tool",
-      "cordova-de-debugger:create-project",
-      "cordova-de-debugger:run-configuration",
-      "cordova-de-debugger:push-tool",
-      "cordova-de-debugger:show-console"
+      "dynamicengine-tools:project-management",
+      "dynamicengine-tools:push-tool",
+      "dynamicengine-tools:create-project",
+      "dynamicengine-tools:run-configuration",
+      "dynamicengine-tools:push-tool",
+      "dynamicengine-tools:show-console"
     ]
   },
   "repository": "https://github.com/github-vipera/dynamicengine-tools",
