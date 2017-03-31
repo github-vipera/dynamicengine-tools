@@ -4,6 +4,13 @@ The official Dynamic Engine Tools plugin for Atom.
 
 ## Project management
 
+### Creating a new Project
+ To create a new project you can use the "Create New Project..." feature on the plugin menu.
+ Here you can see the options available for creating a new Cordova project:
+ <img src="./images/NewProjectCreation.png">
+
+
+
 ### Installed plugin
  In this view you can see all installed plugin with version and relative link to github/gitlab repo. For uninstall a plugin, click to uninstall button.
  <img src="./images/InstalledPlugin.png">
