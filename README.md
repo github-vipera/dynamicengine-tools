@@ -1,4 +1,4 @@
-# cordova-de-debugger package
+# dynamicengine-tools package
 
 The official Dynamic Engine Tools plugin for Atom.
 

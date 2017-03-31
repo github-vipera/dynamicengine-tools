@@ -1,6 +1,6 @@
 'use babel';
 
-import CordovaDeDebugger from '../lib/cordova-de-debugger';
+import CordovaDeDebugger from '../lib/dynamicengine-tools';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('CordovaDeDebugger', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('cordova-de-debugger');
+    activationPromise = atom.packages.activatePackage('dynamicengine-tools');
   });
 
-  describe('when the cordova-de-debugger:toggle event is triggered', () => {
+  describe('when the dynamicengine-tools:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.cordova-de-debugger')).not.toExist();
+      expect(workspaceElement.querySelector('.dynamicengine-tools')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'cordova-de-debugger:toggle');
+      atom.commands.dispatch(workspaceElement, 'dynamicengine-tools:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.cordova-de-debugger')).toExist();
+        expect(workspaceElement.querySelector('.dynamicengine-tools')).toExist();
 
-        let cordovaDeDebuggerElement = workspaceElement.querySelector('.cordova-de-debugger');
+        let cordovaDeDebuggerElement = workspaceElement.querySelector('.dynamicengine-tools');
         expect(cordovaDeDebuggerElement).toExist();
 
         let cordovaDeDebuggerPanel = atom.workspace.panelForItem(cordovaDeDebuggerElement);
         expect(cordovaDeDebuggerPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'cordova-de-debugger:toggle');
+        atom.commands.dispatch(workspaceElement, 'dynamicengine-tools:toggle');
         expect(cordovaDeDebuggerPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('CordovaDeDebugger', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.cordova-de-debugger')).not.toExist();
+      expect(workspaceElement.querySelector('.dynamicengine-tools')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'cordova-de-debugger:toggle');
+      atom.commands.dispatch(workspaceElement, 'dynamicengine-tools:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('CordovaDeDebugger', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let cordovaDeDebuggerElement = workspaceElement.querySelector('.cordova-de-debugger');
+        let cordovaDeDebuggerElement = workspaceElement.querySelector('.dynamicengine-tools');
         expect(cordovaDeDebuggerElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'cordova-de-debugger:toggle');
+        atom.commands.dispatch(workspaceElement, 'dynamicengine-tools:toggle');
         expect(cordovaDeDebuggerElement).not.toBeVisible();
       });
     });
