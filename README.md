@@ -116,7 +116,7 @@ In this panel you can set your mock implementation (for browser emulation), a fo
 
 #### How to define library loader
  de-tools-plugin support mock implementation of Dynamic Engine communication based on js file named (for convention) ControllerMock. In this file you can implement your mock logic using all platform api and imported js library. For example, after NativeStorage plugin installation, you can use this for save and load data in your mock. However, when you use atom remote server (for example for browser emulation), your mock implementation run in a node server. How to provide same api/js-library when mock is running in atom? Set a library loader module implementation.
- Library loader is a js module that allow you to load custom js (like a script in your index) and redifine clobber that is normally provided by your platform plugins.
+ Library loader is a js module that allow you to load custom js (like a script in your index) and define clobber that is normally provided by your platform plugins.
 
 ```
     module.exports = function(reload,serviceBridge){
