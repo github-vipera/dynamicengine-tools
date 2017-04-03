@@ -123,7 +123,24 @@ In this panel you can set your mock implementation (for browser emulation), a fo
        /* use reload to require js file or npm modules
         * and use serviceBridge for access to service
         * such as persistenceService (aka NativeStorage) or
-        * DEStorage (like localStorage)
+        * localStorage emulator (aka DEStorage)
+        */
+        var toolsNativeStorage = serviceBridge.getService("NativeStorage");
+        var toolsDEStorage = serviceBridge.getService("DEStorage");
+
+        //Define your custom adapter here (N.B: define adapter globally);
+        /* example: support native storage set and getString api:
+        NativeStorage = {
+            set:function(key,value,success,fail){
+              toolsNativeStorage.set(key,value);
+              setTimeout(function(){
+                success();
+              });
+            },
+            getString:function(key,success,fail){
+              toolsNativeStorage.get(key,success);
+            }
+        };
         */
     }
 ```
@@ -132,6 +149,8 @@ In this panel you can set your mock implementation (for browser emulation), a fo
 
 
 
-### Script Tool
 
+
+### Script Tool
+With this tool you can run your node script (script defined in package.json)
 <img src="./images/ScriptTool.png">
