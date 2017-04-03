@@ -15,7 +15,7 @@ The official Dynamic Engine Tools plugin for Atom.
  In this view you can see all installed plugin with version and relative link to github/gitlab repo. For uninstall a plugin, click to uninstall button.
  <img src="./images/InstalledPlugin.png">
 
- > NB: cordova-plugin-whitelist are a core security plugin installed by default (don't uninstall this).
+ > N.B: cordova-plugin-whitelist are a core security plugin installed by default (don't uninstall this).
 
 ### Install new plugin
  Provide a search in Cordova plugins Registry (https://cordova.apache.org/plugins/)
@@ -36,6 +36,8 @@ Now your variant could be appear in variant selector:
 For every variant you can add preference (name-value pair) for every platform (Global section) or platform specific (Android, iOS or Browser)
 
 <img src="./images/VariantScreen.png">
+
+> NB: save changes before switch to other views
 
 You can also modify variants definition manually (open and edit ./variants/variants_def.xml file)
 ```
@@ -79,7 +81,6 @@ You can also modify variants definition manually (open and edit ./variants/varia
 </variants>
 ```
 
-
 ## Push Tool
 Development purpose only tools for send push notification to Android and iOS platform
 ### Configuration
@@ -93,11 +94,63 @@ After configuration, use send push view for create and send your push notificati
 <img src="./images/SendPush.png">
 
 
-
 ## Run Configuration
- //TODO
+Open a right panel with Build/Run configuration, integration with remove server (live-reload, remote assets and browser emulation) and npm script integration.
+
 ### Platforms Section
- //TODO
+With this collapsable section you can build and run your application in your device/emulator
+
+<img src="./images/Platforms.png">
+
+
+For execute a build , choose a platform in the firs select and click to build (with the second selector your build variant). For build in release, select Release under Build settings sub section. (see https://cordova.apache.org/docs/en/latest/reference/cordova-cli/#cordova-build-command for more information about use of build.json as a buildConfig)
+After build success you can run app in a device/emulator.
+
+
 ### Remote server section
- //TODO
+If your app use de-tools-plugin, you can connect this with atom plugin and use live-reload feature (Atom plugin provide your app assets remotely).
+
+<img src="./images/RemoteServer.png">
+
+In this panel you can set your mock implementation (for browser emulation), a folder where save NativeStorage of your mock save data (with a custom and reusable format) and a libraryLoader js (see **How to define library Loader** section for more details),
+
+#### How to define library loader
+ de-tools-plugin support mock implementation of Dynamic Engine communication based on js file named (for convention) ControllerMock. In this file you can implement your mock logic using all platform api and imported js library. For example, after NativeStorage plugin installation, you can use this for save and load data in your mock. However, when you use atom remote server (for example for browser emulation), your mock implementation run in a node server. How to provide same api/js-library when mock is running in atom? Set a library loader module implementation.
+ Library loader is a js module that allow you to load custom js (like a script in your index) and define clobber that is normally provided by your platform plugins.
+
+```
+    module.exports = function(reload,serviceBridge){
+       /* use reload to require js file or npm modules
+        * and use serviceBridge for access to service
+        * such as persistenceService (aka NativeStorage) or
+        * localStorage emulator (aka DEStorage)
+        */
+        var toolsNativeStorage = serviceBridge.getService("NativeStorage");
+        var toolsDEStorage = serviceBridge.getService("DEStorage");
+
+        //Define your custom adapter here (N.B: define adapter globally);
+        /* example: support native storage set and getString api:
+        NativeStorage = {
+            set:function(key,value,success,fail){
+              toolsNativeStorage.set(key,value);
+              setTimeout(function(){
+                success();
+              });
+            },
+            getString:function(key,success,fail){
+              toolsNativeStorage.get(key,success);
+            }
+        };
+        */
+    }
+```
+
+
+
+
+
+
+
 ### Script Tool
+With this tool you can run your node script (script defined in package.json)
+<img src="./images/ScriptTool.png">
