@@ -198,3 +198,21 @@
       padding-right: 10px;
     }
 }
+
+.preference-block{
+  label{
+    display: block;
+  }
+  input {
+    display: inline-block;
+    width: calc(~"100% - 40px");
+  }
+  button{
+    display: inline-block;
+    &.icon{
+      &:before {
+            color: red;
+      }
+    }
+  }
+}
