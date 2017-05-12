@@ -34,8 +34,6 @@
 
 .plugins-settings-left-menu-bar-container {
   flex: 1;
-  /*border-right: 1px solid #191919;*/
-  /*background: #282c34;*/
 }
 
 .plugins-settings-left-menu-list-item > div {
@@ -43,11 +41,13 @@
 }
 
 .plugins-settings-left-menu-list-item.menu-item-selected {
-  background: #48505f;
+  background: @background-color-selected;
+  color: @text-color-selected;
 }
 
 .plugins-settings-left-menu-list-item:hover {
-  background: #3b424e;
+  background: @background-color-highlight;
+  color: @text-color-highlight;
 }
 
 .plugins-settings-panel {
@@ -190,4 +190,48 @@
 
 .collapsable-icon{
   float:right;
+}
+
+.variant-values-header{
+    h3{
+      display: inline-block;
+      padding-right: 10px;
+    }
+}
+
+.preference-block{
+  label{
+    display: block;
+  }
+  input {
+    display: inline-block;
+    width: calc(~"100% - 40px");
+  }
+  button{
+    display: inline-block;
+    &.icon{
+      &:before {
+            color: red;
+      }
+    }
+  }
+}
+
+.keystore-block{
+  label{
+    display: block;
+  }
+  input {
+    display: inline-block;
+    width: calc(~"100% - 100px");
+  }
+  button{
+    display: inline-block;
+    width: 95px;
+  }
+}
+
+.refresh {
+  float: right;
+  margin-right: 10px;
 }
