@@ -27,7 +27,7 @@
     "atom-quick-pane": "^1.0.1",
     "chokidar": "^1.6.1",
     "cordova-lib": "^6.5.0",
-    "electron-settings": "^2.2.2",
+    "electron-settings": "^3.0.14",
     "express": "^4.15.2",
     "fs-extra": "^1.0.0",
     "handlebars": "^4.0.6",
