@@ -1,7 +1,7 @@
 {
   "name": "dynamicengine-tools",
   "main": "./lib/dynamicengine-tools",
-  "version": "2.5.3",
+  "version": "2.5.5",
   "description": "Dynamic Engine Tools Plugin for ATOM",
   "keywords": [],
   "activationCommands": {
