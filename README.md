@@ -1,3 +1,5 @@
+**WARN**: This tool is now deprecated. You can use the [de-workbench](https://github.com/github-vipera/de-workbench) tool instead. This project contains all the features of dynamicengine-tools and additional features as well as support for Cordova 8 and the latest Android and iOS platforms.
+
 # dynamicengine-tools package
 
 The official Dynamic Engine Tools plugin for Atom.
